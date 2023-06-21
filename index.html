@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    // link the style sheet for CSS
+    <link rel="stylesheet" href="style.css" />
     <title>Random User Generator</title>
-    <title>Place holder</title>
 </head>
 <body>
-    <div id="app"></div> // single page application loads into this div you created 
+    <div id="app">
+        <img v-bind:src="picture" v-bind:alt="" />
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>Email: {{email}}</h3>
+        <button> Get Random User </button>
+    </div>     
     <script src="https://unpkg.com/vue@3.0.5"></script> // specifically unpacking the tutorial version, not the latest as of creating this project
     <script src="app.js"></script>
 </body>
