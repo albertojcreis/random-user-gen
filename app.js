@@ -12,7 +12,6 @@ const app = Vue.createApp({
         async getUserRandom(){
             const res = await fetch('https://randomuser.me/api')
             const {results} = await res.json()
-
             this.firstName = results[0].name.first
             this.lastName = results[0].name.last
             this.email = results[0].email
@@ -20,6 +19,7 @@ const app = Vue.createApp({
             this.picture = results[0].picture.large
         },
     },
+    
 
 })
 
